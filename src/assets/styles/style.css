@@ -1,0 +1,254 @@
+body{
+    background: #081420;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-top: 40px;
+    height: 100%;
+    width: 100%;
+    /* transform: translateY(50%); */
+   
+}
+.container{
+    border-radius: 19px;
+    border: 2px solid #989898;
+    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 400px;
+   
+}
+.input-container{
+    width: 80%;
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.input-box p{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+   
+   height: fit-content;
+   width: fit-content;
+}
+.input-box input{
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+}
+.heading{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 178.687%; /* 80.409px */
+}
+.login-btn{
+    border-radius: 8px;
+background: #2ECA34;
+box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+width: 100%;
+border: none;
+padding: 10px;
+color: #FFF;
+cursor: pointer;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.btn-con{
+  display: flex;
+  justify-content: center;
+    width: 90%;
+    margin: 20px auto;
+   
+}
+.red-sign{
+    color: #FFF;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+cursor: pointer;
+line-height: 178.687%; /* 28.59px */
+}
+.twi{
+    display: flex;
+    width: 100%;
+}
+.lf{
+max-width: 40px;
+min-width: 40px;
+
+}
+.rf{
+    margin-left: 10px;
+    float: right;
+    min-width: 77%;
+}
+.todoContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.todo-heading{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 87px;
+display: flex;
+align-items: center;
+
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.search{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+.ser-inp{
+   width: 100%;
+   background-color: #384F6B;
+   border: none;
+   outline: none;
+   color: #FFF;
+    padding: 10px;
+}
+.add{
+    background-color: #192431;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #FFF;
+     padding: 10px;
+}
+.btn-add{
+    background-color: #192431;
+    border: none;
+    min-width: 40px;
+    color: #FFF;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.todo{
+    display: flex;
+  align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+.todo-box{
+    width:60%;
+    margin: 2% 0;
+    border-radius: 20px;
+background: #192431;
+box-shadow: 0px 4px 10px 0px rgba(255, 255, 255, 0.41);
+
+}
+.content{
+    padding: 20px;
+    color: #E2E2E2;
+
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.content p{
+    color: #B9B9B9;
+
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.coat{
+    display: flex;
+    width: 100%;
+   justify-content: center;
+    align-items: center;
+}
+.action{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.messagebox{
+    position: absolute;
+    padding: 10px;
+    right: 20px;
+    min-width: 200px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+   
+    border-radius: 10px;
+    top: 20px;
+    background-color: rgb(62, 199, 220);
+}
+.cancle-btn{
+    cursor: pointer;
+}
+
+.modal {
+    /* display: none;  */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    
+    top: 0;
+    width: 100%; 
+   height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #192431;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 40%; 
+  }
+  
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
